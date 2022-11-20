@@ -8,11 +8,11 @@ namespace ScanDirectory.Services
     {
         private readonly IOutResult _outResult;
 
-        public FileExtensionContentTypeProvider Provider { get; set; } = new();
+        private FileExtensionContentTypeProvider Provider { get; set; } = new();
 
-        public List<IScanInfo> scanInfos = new();
+        private List<IScanInfo> scanInfos = new();
 
-        public string? DirectoryPath { get; set; }
+        private string? DirectoryPath { get; set; }
 
         public ScanService(string? path, IOutResult outResult)
         {

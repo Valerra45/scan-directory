@@ -4,9 +4,9 @@ namespace ScanDirectory.Services
 {
     internal class ScanResult : IOutResult
     {
-        public string DirectoryPath { get; set; }
+        private string DirectoryPath { get; set; }
 
-        public string FileName { get; set; }
+        private string FileName { get; set; }
 
         public ScanResult(string path, string fileName)
         {
